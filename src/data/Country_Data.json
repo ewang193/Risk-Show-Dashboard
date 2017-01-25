@@ -1,0 +1,12 @@
+[{"id":112, "risk":10, "txt":"Belarus", "count":11, "high":3, "med":1, "low":4, "review":3},
+{"id":12, "risk":6, "txt":"Algeria", "count":7, "high":3, "med":1, "low":3, "review":0},
+{"id":40, "risk":1, "txt":"Austria", "count":4, "high":0, "med":1, "low":2, "review":1},
+{"id":116, "risk":3, "txt":"Cambodia", "count":10, "high":2, "med":0, "low":5, "review":3},
+{"id":156, "risk":8, "txt":"China", "count":13, "high":3, "med":3, "low":5, "review":2},
+{"id":192, "risk":7, "txt":"Cuba", "count":12, "high":3, "med":7, "low":2, "review":0},
+{"id":818, "risk":6, "txt":"Egypt", "count":2, "high":0, "med":1, "low":1, "review":0},
+{"id":320, "risk":4, "txt":"Guatemala", "count":11, "high":1, "med":4, "low":4, "review":2},
+{"id":392, "risk":0, "txt":"Japan", "count":11, "high":3, "med":3, "low":3, "review":2},
+{"id":188, "risk":6, "txt":"Costa Rica", "count":10, "high":3, "med":6, "low":0, "review":1},
+{"id":36, "risk":7, "txt":"Australia", "count":12, "high":7, "med":2, "low":3, "review":0},
+{"id":4, "risk":10, "txt":"Afghanistan", "count":12, "high":4, "med":2, "low":4, "review":2}]
