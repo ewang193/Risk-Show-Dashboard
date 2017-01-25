@@ -1,0 +1,100 @@
+body {
+  background: white;
+  overflow:hidden;
+}
+
+#section_A {
+  /*border: 1px solid red;*/
+  height: 500px;
+  width: 23.75%;
+  overflow: visible !important;
+}
+
+#section_B_to_D {
+  /*border: 1px solid blue;*/
+  text-align:center;
+  height: 500px;
+}
+
+.title {
+  color: white;
+  height: 85px;
+  padding: 10px 10px 10px 34px;
+  background: #DC6900 linear-gradient(to right, rgba(247, 244, 242, 1) 0%, rgba(235, 137, 56, 1) 13%, rgba(220, 106, 0 , 1) 51%, rgba(220, 106, 0, 1) 71%, rgba(220, 106, 0, 1) 100%);
+  position: relative;
+  z-index: 10;
+}
+
+#country_risk_cards {
+  margin-top:3px;
+  height: 690px;
+  overflow: visible !important;
+  position:relative;
+  z-index: 10;
+}
+
+#country_risk_cards #risk_country{
+  background: rgb(220, 105, 0);
+}
+
+#scroll_country_up, #scroll_country_down {
+  color: #989898;
+}
+
+#scroll_country_up:hover, #scroll_country_down:hover {
+  cursor: pointer;
+}
+
+#scroll_country_up {
+  position: absolute;
+  right: -18px;
+  top: 7px;
+}
+
+#scroll_country_down {
+  position: absolute;
+  right: -18px;
+  top: 393px;
+}
+
+#country_risk_cards #country_risk_cards_svg svg {
+  cursor: pointer;
+}
+
+.title_hdr {
+  width: 100%;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Georgia", sans-serif !important;
+  font-style: italic;
+}
+
+.large_hdr {
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

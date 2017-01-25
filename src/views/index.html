@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Risk Show Dashboard</title>
+    <link href="css/tether.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="components/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Risk Level Show</h1>
+
+  <div id="riskLevelShow" class="col-xs-12">
+    <div id="section_A" class="col-xs-3 pull-left">
+      <div class="row title">
+        <h2 class="title_hdr">Cerberus</h2>
+        <h5 class="large_hdr">Risk Dashboard</h5>
+      </div>
+      <div id="country_risk_cards" class="row header_chart">
+        <svg id="risk_country" height="30" width="100%">
+          <svg height="36">
+            <rect fill="#DC6900" x="0" y="0" height="36"></rect>
+            <text x="15%" y="19" width="10%" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">Country</text>
+            <text x="80%" y="19" width="48%" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">Total Entities</text>
+            <text x="48%" y="19" width="85%" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">Risk Ranking</text>
+          </svg>
+        </svg>
+        <span id="scroll_country_up"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        <svg id="country_risk_cards_svg" height="380" width="100%">
+
+        </svg>
+        <span id="scroll_country_down"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <div id="section_B_to_D" class="col-xs-9 pull-right">
+
+    </div>
+
+    <div id="section_F">
+
+    </div>
+  </div>
+
+
+  <script src="js/homepage/d3_v3.js"></script>
+  <script src="js/homepage/d3.tip.v0.6.3.js"></script>
+  <script src="js/homepage/crossfilter.v1.min.js"></script>
+  <script src="js/homepage/bullet.js"></script>
+  <script src="js/homepage/underscore.js"></script>
+  <script src="js/homepage/queue.v1.min.js"></script>
+  <script src="js/homepage/jquery.js"></script>
+  <script src="js/homepage/tether.js"></script>
+  <script src="js/homepage/bootstrap.js"></script>
+  <script src="js/homepage/topojson.js"></script>
+  <script src="js/homepage/jquery.simplyscroll.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

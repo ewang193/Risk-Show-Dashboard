@@ -85,8 +85,15 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          hostname: '*',
-          port: 9000
+          hostname: 'localhost',
+          port: 9000,
+          base: {
+            path: 'src',
+            options: {
+              index: 'views/index.html'
+            }
+          }
+
         }
       }
     }
