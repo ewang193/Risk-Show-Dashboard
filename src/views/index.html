@@ -7,12 +7,25 @@
     <title>Risk Show Dashboard</title>
     <link href="css/tether.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.simplyscroll.css" rel="stylesheet">
     <link href="components/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Risk Level Show</h1>
-
+  <!--<h1>Risk Level Show</h1>-->
+  <div id="section_B_donut">
+    <div id="B_donut_parent">
+      <div id="B_donut">
+      </div>
+      <div id="B_mask"></div>
+    </div>
+    <svg id="B_donut_country">
+    </svg>
+    <div id="B_donut_entity">
+      <h3></h3>
+    </div>
+  </div>
+  <div id="viz" class="content" style="height:224px;overflow:auto;background:#FFFFFF;display: none"></div>
   <div id="riskLevelShow" class="col-xs-12">
     <div id="section_A" class="col-xs-3 pull-left">
       <div class="row title">
@@ -37,11 +50,77 @@
     </div>
 
     <div id="section_B_to_D" class="col-xs-9 pull-right">
+      <div id="hideSome"></div>
+      <div id="section_D" class="col-xs-12">
+        <ul class="textList">
 
+        </ul>
+      </div>
+      <div id="section_B" class="col-xs-5">
+
+      </div>
+      <div id="section_C" class="col-xs-7" style="padding: 0">
+        <div id="div_02_modal" class="col-xs-12" style="padding:0;">
+          <span id="scroll_entity_up"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+          <svg id="risks" width="100%" height="30">
+            <svg width="100%" height="30">
+              <rect id="risk_header" class="hdr_row" x="0" y="-60" width="100%" height="36"></rect>
+              <text id="risk_header_text" x="27.5%" y="-30" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">
+                Risk Ranking
+              </text>
+              <text id="risk_header_text" x="10%" y="-30" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">
+                Entity
+              </text>
+              <text id="risk_header_text" x="55%" y="-30" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">
+                Total Tansactions
+              </text>
+              <text id="risk_header_text" x="85%" y="-30" fill="white" font-size="12px" font-weight="700" font-family="SegoeUI-Bold, Segoe UI" text-anchor="middle">
+                Total Amount
+              </text>
+            </svg>
+          </svg>
+          <span id="scroll_entity_down"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+          <svg id="div_02_modal_svg" height="100%" width="100%">
+
+          </svg>
+        </div>
+      </div>
     </div>
 
     <div id="section_F">
+      <span id="close-btn"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <span id="entityName" class="entity_label"></span><br>
+      <span class="entity_label">Initiated: <p id="initiated-date" style="display: inline"></p></span><br>
+      <span class="entity_label">Entity Type: <p id="industry" style="display: inline"></p ></span>
+      <span class="line"></span>
+      <div class="row" style="margin: 0">
+        <div class="col-xs-6 text-center entity_chart" >
+          <label>Total<br>Transactions</label>
+          <p id="totalTransactions" class="entity_chart_label"></p>
+          <div class="bar-chart transactions"></div>
+        </div>
+        <div class="col-xs-6 text-center entity_chart">
+          <label >Total<br>Amount</label>
+          <p id="totalAmount" class="entity_chart_label"></p>
+          <div class="bar-chart total-amount"></div>
+        </div>
+      </div>
 
+      <div class="col-xs-12 text-center" style="height: 80px;display: none">
+        <label style="color: white">Risk vs. Value</label>
+        <div class="risk-value-container">
+          <svg width="100%" height="40">
+            <rect id="risk_v_value_v" class="risk_v_value" x="20%" y="12" width="60%" height="24" fill="#009245" fill-opacity="1"></rect>
+            <rect id="risk_v_value_r" class="risk_v_value" x="20%" y="12" width="50%" height="24" fill="red" fill-opacity="1"></rect>
+          </svg>
+          <span class="left">
+            <img src="img/rvv_risk.png" style="width:50px;height:50px;">
+            </span>
+          <span class="right">
+            <img src="img/rvv_value.png" style="width:50px;height:50px;">
+            </span>
+        </div>
+      </div>
     </div>
   </div>
 

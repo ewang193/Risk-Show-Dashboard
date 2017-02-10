@@ -1,100 +1,467 @@
 body {
   background: white;
-  overflow:hidden;
-}
-
-#section_A {
-  /*border: 1px solid red;*/
-  height: 500px;
-  width: 23.75%;
-  overflow: visible !important;
+  overflow: hidden;
 }
 
 #section_B_to_D {
-  /*border: 1px solid blue;*/
-  text-align:center;
-  height: 500px;
+  text-align: center;
 }
 
-.title {
+h3 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}
+
+h6 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+#text{
+  font-size: 12px;
+}
+
+#section_A {
+  height: 85%;
+  width: 23.75%;
+  overflow:visible !important;
+}
+
+#scroll_country_up,#scroll_country_down,#scroll_entity_up,#scroll_entity_down{
+  color: #989898;
+}
+
+#scroll_country_up:hover,#scroll_country_down:hover,#scroll_entity_up:hover,#scroll_entity_down:hover{
+  cursor: pointer;
+}
+
+
+#scroll_country_up{
+  position: absolute;
+  right: -18px;
+  top: 7px;
+}
+
+#scroll_country_down{
+  position: absolute;
+  right: -18px;
+  top: 393px;
+}
+
+#scroll_entity_up{
+  position: absolute;
+  left: -18px;
+  top: 7px;
+}
+
+#scroll_entity_down{
+  position: absolute;
+  left: -18px;
+}
+
+.title{
   color: white;
   height: 85px;
   padding: 10px 10px 10px 34px;
-  background: #DC6900 linear-gradient(to right, rgba(247, 244, 242, 1) 0%, rgba(235, 137, 56, 1) 13%, rgba(220, 106, 0 , 1) 51%, rgba(220, 106, 0, 1) 71%, rgba(220, 106, 0, 1) 100%);
-  position: relative;
+  background: #DC6900 linear-gradient(to right, rgba(247, 244, 242, 1) 0%, rgba(235, 137, 56, 1) 13%, rgba(220, 106, 0, 1) 51%, rgba(220, 106, 0, 1) 71%, rgba(220, 106, 0, 1) 100%);
+  position:relative;
   z-index: 10;
+  /*cursor: pointer;*/
+}
+
+.row_country {
+  width: 100%;
+  overflow:visible !important;
+}
+
+.row_text_small {
+  font-size:12px;
+  font-weight:500;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+
+.row_text {
+  font-size:13px;
+  font-weight:700;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+
+.row_bar {
+  fill-opacity: 0.75;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-opacity: 0.8;
+}
+
+.row_path {
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+
+#risk_country {
+  top: 3px;
+  position:relative;
+  z-index: 16;
+  overflow:visible;
+}
+
+#section_B {
+  display:inline-block;
+  /*height: 500px;*/
+  position: relative;
+  margin: 0 auto;
+  vertical-align: center;
+
+}
+
+#section_B canvas {
+  /*margin-left: -80px;*/
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 0;
+}
+#B_donut {
+  position:absolute;
+  z-index:1;
+}
+
+#B_mask {
+  position:absolute;
+  z-index:2;
+}
+
+#B_donut_parent {
+  /*margin:0 auto;*/
+  /*margin-left: 3px;*/
+  position: absolute;
+  /*border:1px solid red;*/
+
+}
+
+#B_donut_country{
+  position: absolute ;
+  vertical-align: center;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  z-index:5;
+}
+
+#B_donut_entity {
+  position: absolute ;
+  /*color:white;*/
+}
+
+
+
+.entity_donut_text {
+  fill: #000;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 24px;
+  text-anchor: middle;
+}
+
+.entity_donut_flagged{
+  fill:black;
+  font-size:12;
+  text-anchor:middle;
+  font-weight:bold;
+}
+
+#div_02_modal {
+  z-index: 8;
+  overflow:visible;
+  height: 128px;
+}
+/*for text Scroll*/
+#section_D {
+  position: relative;
+  left: -40px !important;
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  background: #fbc98e linear-gradient(to right, rgba(247, 244, 242, 1) 0%, #fbc98e 10%, #fbc98e 100%);
+  position:relative;
+  overflow: hidden;
+  margin: 15px 0;
+  opacity: 0.8;
+  z-index: 8;
+}
+
+#section_D .simply-scroll {
+  margin-left: -12px;
+}
+
+/*#section_D.hide_overflow {*/
+/*overflow:hidden;*/
+/*}*/
+
+ul.textList {
+  position: relative;
+  display: inline-block;
+  /*background-color: #fbc98e;*/
+  list-style: none;
+}
+
+ul.textList.cloned {
+  position: absolute;
+  top:0;
+  left:0;
+  /*background-color: #fbc98e !important;*/
+}
+
+ul.textList li {
+  /*background-color: #fbc98e;*/
+  float: left;
+  /*width: 500px;*/
+  height: 45px;
+  text-align:center;
+  display:inline-block;
+  vertical-align:middle;
+  line-heigth: 15px;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 1 !important;
+}
+/* for text scroll end*/
+
+
+
+
+.title_hdr{
+  width: 100%;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Georgia', sans-serif !important;
+  font-style: italic;
+}
+
+.large_hdr{
+  font-size:17px;
+}
+
+.header-chart{
+  height: 495px;
 }
 
 #country_risk_cards {
-  margin-top:3px;
   height: 690px;
   overflow: visible !important;
   position:relative;
   z-index: 10;
 }
 
-#country_risk_cards #risk_country{
-  background: rgb(220, 105, 0);
+#country_risk_cards #risk_country {
+  background:rgb(220, 105, 0);
 }
 
-#scroll_country_up, #scroll_country_down {
-  color: #989898;
+.arrow-right {
+  width: 0px;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid green;
 }
 
-#scroll_country_up:hover, #scroll_country_down:hover {
+.card_id{
+  font-size:12px;
+  font-weight:600;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+
+.card_text{
+  font-size:16px;
+  font-weight:700;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+
+
+.tag_text{
+  font-size:16px;
+  font-weight:700;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+
+.card_input{
+  font-size:12px;
+  font-weight:700;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+}
+
+.text_1{
+  font-size:42px;
+  fill:#fff;
+  font-family:SegoeUI-Bold, Segoe UI;
+  font-weight:700;
+  text-anchor:middle;
+}
+rect.hdr_row {
+  stroke: white;
+  fill: #DC6900;
+  fill-opacity: 1;
+  stroke-opacity: 0.2;
+  shape-rendering: crispEdges;
+}
+
+.bar-chart.risk-value{
+  width:74%;
+  display: inline-block;
+  z-index: 8;
+}
+.bar-chart.risk-value>svg{
+  display: inline-block;
+}
+
+.risk-value-container{
+  text-align: center;
+  overflow: auto;
+}
+
+.risk-value-container>.left,.risk-value-container>.right{
+  z-index: 9;
+  width:12%;
+  margin: 0 6px 0 -15px;
+  position: relative;
+}
+
+.risk_v_value {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-opacity: 0.8;
+}
+
+.risk-value-container>.left{
+  float: left;
+  left: 36px;
+  top:-47px;
+}
+.risk-value-container>.right{
+  float: right;
+  right: 36px;
+  top:-47px;
+}
+
+#section_F {
+  /*background: rgba(224, 69, 35, 0.9);*/
+  position: absolute;
+  right: -600px;
+  top: 8%;
+  z-index: 8;
+  width: 0;
+  padding:8px 0 3px 0;
+  border: 2px solid transparent;
+}
+
+#close-btn{
+  float: right;
+  position: relative;
+  right: 10px;
+  color: white;
+}
+
+#entityName{
+  text-decoration: underline;
   cursor: pointer;
+  font-weight: bold;
 }
 
-#scroll_country_up {
-  position: absolute;
-  right: -18px;
-  top: 7px;
+.entity_label{
+  color: white;
+  padding-left: 8px;
 }
 
-#scroll_country_down {
-  position: absolute;
-  right: -18px;
-  top: 393px;
+.entity_chart{
+  top: 3px;
+  background: white;
+  padding: 8px 0 0 0;
+}
+
+.entity_chart label{
+  color:#000000;
+  line-height: 16px;
+}
+
+.entity_chart_label{
+  margin-bottom: 0;
+  font-family:SegoeUI-Bold, Segoe UI;
+  font-weight:700;
+  font-size: 28px;
+  color: black;
+}
+#country_risk_cards #risk_country{
+  cursor: pointer;
 }
 
 #country_risk_cards #country_risk_cards_svg svg {
   cursor: pointer;
 }
 
-.title_hdr {
-  width: 100%;
-  font-weight: bold;
-  font-size: 2rem;
-  font-family: "Georgia", sans-serif !important;
-  font-style: italic;
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+
+  border-left: 60px solid green;
 }
-
-.large_hdr {
-  font-size: 17px;
+#section_C{
+  margin-top: 25px;
 }
+#section_C #div_02_modal_svg svg{
+  cursor: pointer;
+}
+#div_02_modal{
+  display: none;
+}
+#B_donut_entity{
+  text-align: center;
+  position:absolute;
+  z-index: 6;
+}
+#hideSome{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+64,ffffff+100&1+68,0+100 */
+  background: -moz-linear-gradient(left,  rgba(255,255,255,1) 14%, rgba(255,255,255,0.8) 68%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 14%,rgba(255,255,255,0.8) 68%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(255,255,255,1) 14%,rgba(255,255,255,0.8) 68%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
 
+  width: 80px;
+  z-index: 9;
+  float: right;
+  position: absolute;
+  top: 15px;
+  height: 45px;
+  opacity: 1;
+  left: -30px;
+}
+.simply-scroll .simply-scroll-list li{
+  width: auto;
+}
+.simply-scroll .simply-scroll-list li font{
+  margin: 0px 5px 0 18px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+/*.simply-scroll .simply-scroll-clip,.simply-scroll {*/
+/*width: 100%;*/
+/*}*/
+.footer{
+  position: fixed;
+  z-index: 100;
+}
